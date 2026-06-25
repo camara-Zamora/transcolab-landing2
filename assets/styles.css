@@ -2029,40 +2029,59 @@ h3 {
 
 .practical-layout {
   display: grid;
-  gap: 44px;
+  grid-template-columns: minmax(350px, 0.76fr) minmax(0, 1.24fr);
+  column-gap: clamp(46px, 6vw, 88px);
+  row-gap: 24px;
+  align-items: start;
 }
 
+/*
+ * Los hijos del encabezado participan en la retícula principal.
+ * Así el calendario ocupa el espacio derecho mientras el titular
+ * desarrolla su altura en la columna izquierda.
+ */
 .practical-heading {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(280px, 0.6fr);
-  gap: 28px 62px;
-  align-items: end;
+  display: contents;
 }
 
 .practical-heading .kicker {
   grid-column: 1 / -1;
+  grid-row: 1;
 }
 
 .practical-heading h2 {
-  max-width: 12ch;
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  max-width: 11ch;
+  margin-top: 4px;
+  font-size: clamp(3.55rem, 4.8vw, 5.1rem);
+  line-height: 0.92;
 }
 
 .practical-heading > p:last-child {
-  margin: 0;
+  grid-column: 2;
+  grid-row: 2;
+  max-width: 45ch;
+  margin: 4px 0 0;
+  padding: 15px 0 15px 22px;
+  border-left: 2px solid rgba(215, 149, 49, 0.72);
   color: var(--muted);
   font-size: 0.99rem;
   line-height: 1.66;
 }
 
 .calendar-groups {
+  grid-column: 2;
+  grid-row: 3;
   display: grid;
-  gap: 23px;
+  gap: 18px;
+  align-self: start;
 }
 
 .calendar-group {
   display: grid;
-  grid-template-columns: 132px 1fr;
-  gap: 24px;
+  grid-template-columns: 108px 1fr;
+  gap: 18px;
   align-items: stretch;
 }
 
@@ -2070,7 +2089,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 18px 0;
+  padding: 15px 0;
   border-top: 2px solid var(--amber);
 }
 
@@ -2104,7 +2123,7 @@ h3 {
 
 .calendar-line article {
   position: relative;
-  padding: 19px 17px 21px;
+  padding: 17px 15px 19px;
   border-right: 1px solid var(--line);
 }
 
@@ -2115,7 +2134,7 @@ h3 {
 .calendar-line article::before {
   content: "";
   position: absolute;
-  left: 17px;
+  left: 15px;
   top: -5px;
   width: 9px;
   height: 9px;
@@ -2153,6 +2172,8 @@ h3 {
 }
 
 .location-panel {
+  grid-column: 1 / -1;
+  grid-row: 4;
   position: relative;
   display: grid;
   grid-template-columns: minmax(270px, 0.82fr) minmax(0, 1fr) 138px;
@@ -2249,6 +2270,8 @@ h3 {
 }
 
 .poster-details {
+  grid-column: 1 / -1;
+  grid-row: 5;
   padding-top: 3px;
 }
 
@@ -3201,6 +3224,41 @@ h3 {
     text-align: left;
   }
 
+  .practical-layout {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .practical-heading {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .practical-heading .kicker,
+  .practical-heading h2,
+  .practical-heading > p:last-child,
+  .calendar-groups,
+  .location-panel,
+  .poster-details {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .practical-heading h2 {
+    max-width: 13ch;
+    margin-top: 0;
+    font-size: clamp(3.25rem, 7.5vw, 4.7rem);
+  }
+
+  .practical-heading > p:last-child {
+    max-width: 52ch;
+    margin-top: 0;
+    padding: 15px 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
   .calendar-group {
     grid-template-columns: 1fr;
     gap: 12px;
@@ -3291,6 +3349,11 @@ h3 {
   .practical-heading > p:last-child,
   .paths-heading > p:last-child {
     font-size: 0.93rem;
+  }
+
+  .practical-heading h2 {
+    max-width: 12ch;
+    font-size: clamp(2.65rem, 12vw, 3.55rem);
   }
 
   .kicker {
