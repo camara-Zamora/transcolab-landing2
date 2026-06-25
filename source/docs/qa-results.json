@@ -1,0 +1,146 @@
+{
+  "passed": 28,
+  "total": 28,
+  "checks": [
+    {
+      "name": "Un único H1",
+      "ok": true,
+      "detail": "1 encontrados"
+    },
+    {
+      "name": "IDs únicos",
+      "ok": true,
+      "detail": "28 ids, 28 únicos"
+    },
+    {
+      "name": "13 módulos fuente",
+      "ok": true,
+      "detail": "13 módulos"
+    },
+    {
+      "name": "Anclas internas válidas",
+      "ok": true,
+      "detail": "todas resuelven"
+    },
+    {
+      "name": "Recursos locales presentes",
+      "ok": true,
+      "detail": "todos presentes"
+    },
+    {
+      "name": "Todas las imágenes tienen alt",
+      "ok": true,
+      "detail": "6 imágenes"
+    },
+    {
+      "name": "Sin urgencia o certificación inventada",
+      "ok": true,
+      "detail": "sin términos problemáticos"
+    },
+    {
+      "name": "Indica 24 h presenciales",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Indica 16 h de materiales",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Aclara ausencia de evaluación",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Permite módulos individuales",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Skip link presente",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Reduced motion presente",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Safe area presente",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Hero usa viewport seguro",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "CTA principal antes de la transformación",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Formulario de inscripción enlazado",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Canvas de transformación presente",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Control de pausa presente",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Cinco etapas de transformación",
+      "ok": true,
+      "detail": "5 etapas"
+    },
+    {
+      "name": "Fallback visual del 3D presente",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "CTA móvil presente",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "Botones con type explícito",
+      "ok": true,
+      "detail": "0 sin type"
+    },
+    {
+      "name": "Todos los details tienen summary",
+      "ok": true,
+      "detail": "0 sin summary"
+    },
+    {
+      "name": "CSS con llaves equilibradas",
+      "ok": true,
+      "detail": "591 abre / 591 cierra"
+    },
+    {
+      "name": "JavaScript válido",
+      "ok": true,
+      "detail": ""
+    },
+    {
+      "name": "JSON-LD válido",
+      "ok": true,
+      "detail": "Course"
+    },
+    {
+      "name": "Fechas, docentes y ubicación completos",
+      "ok": true,
+      "detail": "datos completos"
+    }
+  ]
+}
