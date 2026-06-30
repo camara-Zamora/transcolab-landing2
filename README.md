@@ -1,6 +1,6 @@
 # Landing TransCoLab Plus
 
-Paquete completo de la landing estática de TransCoLab Plus.
+Paquete completo de la landing estática de TransCoLab Plus. Versión sin la sección “Recorrido”.
 
 ## Publicación directa
 
@@ -28,12 +28,14 @@ python3 build.py
 python3 qa_check.py
 ```
 
-## Sección 3D
-
-El módulo de transformación utiliza Canvas 2D con profundidad, morphing entre cinco estados, control por scroll, navegación manual, pausa, fallback visual y soporte para reducción de movimiento.
 
 ## Formulario de inscripción
 
 Todos los CTA apuntan a:
 
 `https://camarazamora.formaloo.me/5of92q`
+
+
+## Ajuste v4
+
+Corregido el recorte de fotografías en el acordeón de equipo docente: en escritorio las fotos activas se desplazan a la zona derecha y el texto queda en una columna limpia a la izquierda.
