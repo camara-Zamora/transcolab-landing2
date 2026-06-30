@@ -83,7 +83,7 @@
         eyebrow: 'Calidad, laboratorio y control del cereal',
         summary: 'Ingeniera Técnica Agrícola con más de 15 años de experiencia en control de calidad de trigo y otros cereales, innovación aplicada, formación y transferencia tecnológica.',
         tags: ['Calidad', 'Laboratorio', 'Trigo'],
-        image: 'assets/itziar-aranguren-yarnoz.png',
+        image: 'assets/ITZIAR-ARANGUREN-YARNOZ.jpeg',
         position: '50% 44%',
         href: '#programa'
       },
