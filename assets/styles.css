@@ -4378,3 +4378,66 @@ h3 {
     font-size: clamp(2rem, 10.5vw, 3rem);
   }
 }
+
+/* =========================================================
+   PATCH FINAL — MÓVIL DOCENTES MÁS LUMINOSO
+   ========================================================= */
+@media (max-width: 760px) {
+  .faculty-tile__image,
+  .faculty-tile.is-active .faculty-tile__image,
+  .faculty-tile:not(.is-active) .faculty-tile__image,
+  .faculty-tile:hover .faculty-tile__image,
+  .faculty-tile:focus-within .faculty-tile__image,
+  .faculty-tiles:hover .faculty-tile.is-active:not(:hover) .faculty-tile__image,
+  .faculty-tiles:focus-within .faculty-tile.is-active:not(:focus-within) .faculty-tile__image {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: brightness(1.18) contrast(0.98) saturate(1.04) !important;
+  }
+
+  .faculty-tile__shade,
+  .faculty-tile:not(.is-active) .faculty-tile__shade,
+  .faculty-tile.is-active .faculty-tile__shade,
+  .faculty-tile:hover .faculty-tile__shade,
+  .faculty-tile:focus-within .faculty-tile__shade {
+    opacity: 1 !important;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(3, 31, 23, 0.00) 0%,
+        rgba(3, 31, 23, 0.00) 64%,
+        rgba(3, 31, 23, 0.012) 84%,
+        rgba(3, 31, 23, 0.035) 100%
+      ) !important;
+  }
+
+  .faculty-tile__content em,
+  .faculty-tile__content strong,
+  .faculty-tile__content small,
+  .faculty-tile__summary,
+  .faculty-tile__link,
+  .faculty-tile__topline small,
+  .faculty-tile__topline i,
+  .faculty-tile__topline b {
+    text-shadow:
+      0 2px 14px rgba(0, 0, 0, 0.46),
+      0 0 1px rgba(0, 0, 0, 0.34) !important;
+  }
+
+  .faculty-tile__tags i {
+    background: rgba(3, 31, 23, 0.18) !important;
+    border-color: rgba(255, 255, 255, 0.24) !important;
+    color: #fff7e8 !important;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  .mobile-cta {
+    padding: 7px 7px 7px 12px !important;
+    border-radius: 15px !important;
+  }
+
+  .mobile-cta a {
+    min-height: 39px !important;
+  }
+}
