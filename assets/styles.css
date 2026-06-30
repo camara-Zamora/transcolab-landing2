@@ -4203,8 +4203,19 @@ h3 {
   .faculty-tile__shade,
   .faculty-tile:not(.is-active) .faculty-tile__shade {
     background:
-      linear-gradient(180deg, rgba(3, 31, 23, 0.18) 0%, rgba(3, 31, 23, 0.78) 50%, rgba(3, 31, 23, 0.96) 100%),
-      linear-gradient(90deg, rgba(3, 31, 23, 0.74), rgba(3, 31, 23, 0.42));
+      linear-gradient(
+        180deg,
+        rgba(3, 31, 23, 0.02) 0%,
+        rgba(3, 31, 23, 0.08) 34%,
+        rgba(3, 31, 23, 0.38) 72%,
+        rgba(3, 31, 23, 0.68) 100%
+      ),
+      linear-gradient(
+        90deg,
+        rgba(3, 31, 23, 0.18) 0%,
+        rgba(3, 31, 23, 0.04) 58%,
+        rgba(3, 31, 23, 0.00) 100%
+      );
   }
 
   .faculty-tile__rail {
