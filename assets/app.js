@@ -69,7 +69,7 @@
         eyebrow: 'Microbiología e innovación alimentaria',
         summary: 'Especializada en investigación alimentaria, fermentación de microorganismos, conservación de alimentos, seguridad alimentaria y desarrollo de nuevos ingredientes.',
         tags: ['Microbiología', 'Fermentación', 'Nuevos ingredientes'],
-        image: 'assets/cereal-wide.webp',
+        image: 'assets/Foto_Leire_San_Vicente.jpg',
         position: '55% 50%',
         href: '#programa'
       },
